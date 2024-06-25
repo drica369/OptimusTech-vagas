@@ -1,0 +1,706 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root{
+    --fonte-primaria:"Crimson Text", serif;
+    --fonte-segundaria: "Playfair Display", serif;
+    --cor-texto-primeira:#667085;
+    --cor-texto-segunda:#101828;
+    --cor-texto-terceira:#8E2424;
+    --background-color-colaborador-botão:#FDF8F8;
+    --background-color-email:#F9FAFB;
+    --background-color-branca: #fff;
+}
+
+
+
+.logo{
+    width: 35%;
+    margin: 0 3em 0 .5em;
+    
+}
+
+
+.cabeçalho__menu{
+    white-space: nowrap;
+    display: none;
+}
+
+.cabeçalho__itens{
+    color: var(--cor-texto-primeira);
+    font-family:var(--fonte-segundaria);
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.cabeçalho__itens-pessoas{
+    color:var(--background-color-branca);
+    background-color: var(--cor-texto-terceira);
+    border-radius: 8px;
+    padding: 12px 8px;
+    margin: .3em;
+    
+}
+
+
+.cabeçalho__menu-hamburguer { 
+    width: 24px; 
+    height: 24px; 
+    background-image: url(./img/menu\ fechado.svg);
+    background-repeat: no-repeat; 
+    background-position: center; 
+    display: inline-block;
+    
+
+} 
+
+.lista-menu__item {
+    font-size: 10px;
+    font-family: var(--fonte-primaria);
+}
+
+ 
+
+.container__botao:checked~.container__rotulo>.cabeçalho__menu-hamburguer { 
+    background-image: url(./img/menu\ aberto.svg); 
+
+} 
+
+ 
+
+.container__botao:checked~.container__rotulo { 
+    background: var(--cor-texto-terceira); 
+
+} 
+
+
+.cabeçalho{ 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    position: relative; 
+
+
+}
+
+
+
+
+
+.container { 
+    display: flex; 
+    align-items: center;
+
+} 
+
+ 
+
+.container__imagem { 
+    padding: 1em; 
+
+} 
+
+ 
+
+.lista-menu { 
+    display: none; 
+    position: absolute;
+    top: 90%; 
+    width: 30vw; 
+    background-color: var(--background-color-branca);
+    font-family: var(--fonte-segundaria);
+
+} 
+
+.container__botao:checked~.lista-menu{
+    display: block;
+ 
+}
+ 
+
+.lista-menu__titulo, 
+.lista-menu__item { 
+    padding:.8em; 
+    margin: 0 2em 0 0;
+    background-color: var(--branco); 
+
+} 
+
+
+.lista-menu__titulo { 
+    color: var(--cor-texto-terceira); 
+    font-weight: 700; 
+
+} 
+
+
+.lista-menu__link { 
+    font-family: var(--fonte-primaria);
+    font-size: 14px;
+    color: var(--cor-texto-primeira);
+    text-transform: uppercase; 
+    text-decoration: none;
+
+} 
+
+.lista-menu__link:hover{
+    color:var(--cor-texto-terceira);
+    
+}
+
+.container__botao{
+    display: none;
+}
+
+
+
+
+
+.sobre__nós-container, .vagas-abertas__container  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 6px;
+    margin: 3em 1em;
+    font-family: var(--fonte-primaria);
+
+}
+
+.sobre__nós,  .vagas-abertas__botão{
+    text-align: center;
+    text-decoration: none;
+    color: var(--cor-texto-terceira);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.sobre__nós-sobtitulo, .vagas-abertas__subtitulo{
+    font-family: var(--fonte-segundaria);
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--cor-texto-segunda);
+}
+
+
+.sobre__nós-texto, .vagas-abertas__texto{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--cor-texto-primeira);
+    
+
+}
+
+
+
+
+
+
+
+.metricas__container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 5em 1.5em;
+    gap: 50px;
+    
+}
+
+
+.metricas__cotainer-2{
+    width: 140px;
+    height: 100px;
+
+}
+
+.metricas__subtitulo{
+    color: var(--cor-texto-terceira);
+    font-size: 36px;
+    font-weight: 600;
+    margin: 1em 0 0 0;
+
+}
+
+
+.metricas__subtitulo-segundo{
+    font-family: var(--fonte-segundaria);
+    color: var(--cor-texto-segunda);
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 0 .5em 0;
+
+}
+
+.metricas__texto{
+    color: var(--cor-texto-primeira);
+    font-size: 14px;
+    
+
+}
+
+
+
+
+
+
+.vagas-abertas__botão{
+    margin: 2em 0 0 7em;
+    text-align: center;
+    background-color: var(--background-color-colaborador-botão);
+    width: 125px;
+    height: 20px;
+    border-radius: 16px;
+}
+
+
+
+.container__vaga{
+    font-family:var(--fonte-primaria);
+    margin-left: 3em;
+}
+
+
+.vaga__titulo{
+    font-family: var(--fonte-segundaria);
+    font-size:18px ;
+    font-weight: 500;
+    margin: 2em 0 1em 0;
+}
+
+
+.vaga{
+    width: 250px;
+    height: 50px;
+    border-radius: 16px;
+    border: 1px solid var(--cor-texto-primeira);
+    padding: 16px 18px;
+    gap: 24px;
+    line-height: 1.5;
+    margin: 1em;
+}
+
+.vaga__nome{
+    font-size: 16px;
+
+}
+
+.vaga__informacoes{
+    color: var(--cor-texto-primeira);
+    font-style: 14px;
+}
+
+
+
+
+
+
+.colaborador__container{
+    border-radius: 16px;
+    padding: 40px;
+    background-color: var(--background-color-colaborador-botão);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin:3em 0 ;
+    font-family: var(--fonte-primaria);
+}
+
+.colaborador__subtitulo{
+    color:var(--cor-texto-terceira);
+}
+
+.colaborador__texto{
+    font-family: var(--fonte-segundaria);
+    font-size: 14px;
+    margin: 1em 0  3em 0;
+}
+
+.foto__julia-castro{
+    width: 1.5em;
+}
+
+.nome__julia{
+    font-size: 14px;
+}
+
+.cargo__julia-castro{
+    color: var(--cor-texto-primeira);
+    font-size: 10px;
+}
+
+    
+
+.email__container{
+    border-radius: 16px;
+    padding: 40px;
+    background-color:var(--background-color-email);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin:3em 0 ;
+    font-family: var(--fonte-primaria);
+
+}
+
+.email__subtitulo{
+    font-family: var(--fonte-segundaria);
+    font-size: 16px;
+    margin: 1em;
+}
+
+.email__texto{
+    font-size: 14px;
+    color: var(--cor-texto-primeira);
+
+}
+
+
+.email{
+    width: 160px;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid var(--cor-texto-primeira);
+    padding: 10px 12px;
+    margin: 1.5em .5em;
+    
+}
+
+.botao__email-cadastro{
+    width: 50px;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px;
+    padding: 8px;
+    color: var(--background-color-email);
+    background-color: var(--cor-texto-terceira);
+    font-size: 14px;
+    text-decoration: none;
+
+}
+
+.dereitos__email{
+     font-size: 10px;
+     color: var(--cor-texto-primeira);
+}
+
+
+@media only screen and (min-width: 768px ){
+    .cabeçalho{
+        height: 60px;
+        margin: 0 1em;
+     }
+    
+     
+    .cabeçalho__menu-hamburguer{
+        display: none;
+    }
+    
+    .cabeçalho__menu{
+        display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap:10px;
+        margin: 0 8em 0 0;
+    }
+
+    .cabeçalho__menu-itens{
+        text-decoration: none;
+        text-align: center;
+        font-family: var(--fonte-segundaria);
+        color: var(--cor-texto-primeira);
+        font-weight:500 ;
+        font-size: 14px;
+        
+    }
+
+    .cabeçalho__menu__pessoas{
+        display: flex;
+        gap:20px;
+        align-items: center;
+        
+    }
+
+
+
+
+
+    .sobre__nós-container{
+        margin: 3em 2em;
+    }
+
+     
+
+    .sobre__nós-texto{
+        margin: 0 15em;
+    }
+
+
+
+
+
+
+    .metricas__container{
+        margin-left: 2em;
+        
+    }
+
+
+
+    .vagas-abertas__imagem{
+        margin-top: 1em;
+    }
+    
+    .vagas-abertas__botão{
+        margin: 3em 0 0 20em;
+    }
+
+    .vaga{
+        width: 500px;
+        height: 50px;
+        border-radius: 16px;
+        border: 1px solid var(--cor-texto-primeira);
+       
+    }
+
+    .container__vaga{
+        margin-left: 8em;
+    }
+
+}
+
+@media only screen and (min-width: 1440px ){
+    .cabeçalho{
+        margin: 0 5em;
+    
+    }
+    
+    .cabeçalho__menu-hamburguer{
+        display: none;
+    }
+    .cabeçalho__menu{
+        gap: 20px;
+    }
+
+    .cabeçalho__itens{
+        font-size: 18px
+    }
+
+    .cabeçalho__menu-itens{
+        font-size: 18px;
+    }
+
+
+    .cabeçalho__menu{
+        margin: 0 30em 0 3em;
+     
+    }
+
+
+
+
+    .sobre__nós-container, .vagas-abertas__container{
+        margin: 8em 0 ;
+    }
+
+    .sobre__nós-sobtitulo, .vagas-abertas__subtitulo{
+        margin: .5em;
+        font-size: 60px;
+    }
+     
+    .sobre__nós-texto, .vagas-abertas__texto{
+        font-size:26px ;
+        margin: 0 10em;
+    }
+     
+    .sobre__nós,  .vagas-abertas__botão{
+        font-size: 20px;
+
+    }
+
+
+
+
+
+    .metricas__subtitulo{
+        font-size: 60px;
+    }
+
+    .metricas__subtitulo-segundo{
+        font-size: 20px;
+
+    }
+
+    .metricas__texto{
+        font-size: 18px;
+    }
+
+    .metricas__container{
+       margin-left: 10em;
+        
+    }
+
+    .metricas__cotainer-2{
+        width: 250px;
+        height: 200px;
+    }
+
+
+
+
+
+
+    .vagas-abertas__botão{
+        margin-left: 33em;
+    }
+
+
+    .vagas-abertas__imagem{
+        width: 90%;
+        margin: 1em 0 0 6em;
+    }
+
+    .container__vaga{
+        margin-left: 22em;
+    }
+    
+     .vaga{
+        width: 768px;
+        height: 110px;
+        border-radius: 16px;
+        border: 1px solid var(--cor-texto-primeira);
+        padding: 24px 28px;
+        gap: 24px;
+        
+    }
+
+    .vaga__titulo{
+        font-size: 20px;
+    }
+
+    .vaga__nome{
+        padding: 3em 0 0 0;
+        font-size: 20px;
+    }
+
+    .vaga__informacoes{
+        font-size: 18px;
+    }
+
+
+
+
+
+    .colaborador__container{
+         width: 1216px;
+         height: 404px;
+         background-color: var(--background-color-colaborador-botão);
+         padding: 64px;
+         margin-left: 2em;
+
+    }
+
+    .colaborador__subtitulo{
+        font-size: 20px;
+        margin-top: 3em;
+    }
+
+    .colaborador__texto{
+        font-size: 36px;
+    }
+
+
+    .foto__julia-castro{
+        width: 60px;
+    }
+
+
+    .nome__julia{
+        font-size: 16px;
+    }
+
+    .cargo__julia-castro{
+        font-size:14px;
+    }
+
+
+
+
+
+    .email__container{
+        width: 1216px;
+        height: 404px;
+        background-color: var(--background-color-email);
+        padding: 64px;
+        margin: 5em 0 0 2em;
+    }
+
+    .email__subtitulo{
+        font-size: 36px;
+        margin-top: 2em;
+    }
+
+    .email__texto{
+        font-size: 20px;
+    }
+
+    .email{
+        width: 360px;
+        height: 48px;
+        border: solid var(--cor-texto-primeira);
+    }
+
+    .botao__email-cadastro{
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .dereitos__email{
+        font-size: 16px;
+    }
+
+}
+
+
+@media only screen and (min-width:1920px){
+    .cabeçalho__menu{
+        margin: 0 60em 0 3em;
+     
+    }
+
+    .metricas__container{
+        margin-left: 25em;
+
+    }
+
+    .vagas-abertas__botão{
+        margin-left: 45em;
+    }
+
+
+    .colaborador__container{
+        width: 1700px;
+
+    }
+
+    .email__container{
+        width: 1700px;
+        
+    }
+
+
+
+
+
+
+
+}
+    
+
+
+
+    
+
